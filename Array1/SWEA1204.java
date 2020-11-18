@@ -32,7 +32,7 @@ import java.io.FileInputStream;
    사용하는 클래스명이 Solution 이어야 하므로, 가급적 Solution.java 를 사용할 것을 권장합니다.
    이러한 상황에서도 동일하게 java Solution 명령으로 프로그램을 수행해볼 수 있습니다.
  */
-class SWEA1206
+class SWEA1204
 {
 	public static void main(String args[]) throws Exception
 	{
@@ -43,33 +43,33 @@ class SWEA1206
 		   따라서 테스트를 수행할 때에는 아래 주석을 지우고 이 메소드를 사용하셔도 좋습니다.
 		   단, 채점을 위해 코드를 제출하실 때에는 반드시 이 메소드를 지우거나 주석 처리 하셔야 합니다.
 		 */
-		System.setIn(new FileInputStream("res/input2.txt"));
+		System.setIn(new FileInputStream("Array1/res/input.txt"));
 
 		/*
 		   표준입력 System.in 으로부터 스캐너를 만들어 데이터를 읽어옵니다.
 		 */
 		Scanner sc = new Scanner(System.in);
+		int T;
+		T=sc.nextInt();
 		/*
 		   여러 개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 		*/
 
-		for(int test_case = 1; test_case <= 10; test_case++)
+		for(int test_case = 1; test_case <= T; test_case++)
 		{
-			int size = sc.nextInt();
-			int answer = 0;
-			int[] building = new int[size];
-			for(int i = 0; i < size; i++) { //building 배열에 담아 비교
-				building[i] = sc.nextInt();
+			int level = sc.nextInt();
+			int[] grade = new int[101];
+			for(int i = 0; i < 1000; i++) {
+				grade[sc.nextInt()]++;
 			}
-			for(int i = 2; i < size-2; i++) { //양쪽 끝 2개는 포함하지 않음
-				int target = building[i];
-				//왼쪽 2개, 오른쪽 2개의 빌딩 중 차이가 가장 적은 빌딩을 기준으로 결정됨
-				int left = Math.min(target-building[i-1], target-building[i-2]);
-				int right = Math.min(target-building[i+1], target-building[i+2]);
-				int minGap = Math.min(left, right);
-				answer += (minGap > 0) ? minGap : 0;
+			int answer = 0; int max = 0;
+			for(int i = 0; i < 101; i++) {
+				if(max <= grade[i]) {
+					max = grade[i];
+					answer = i;
+				}
 			}
-			System.out.println("#" + test_case + " " + answer);
+			System.out.println("#" + level + " " + answer);
 		}
 	}
 }

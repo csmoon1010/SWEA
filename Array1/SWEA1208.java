@@ -25,6 +25,7 @@
 //System.out.println(var);		       				   // 문자열 1개 출력하는 예제
 //System.out.println(AB);		       				     // long 변수 1개 출력하는 예제
 /////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileInputStream;
 
@@ -32,7 +33,7 @@ import java.io.FileInputStream;
    사용하는 클래스명이 Solution 이어야 하므로, 가급적 Solution.java 를 사용할 것을 권장합니다.
    이러한 상황에서도 동일하게 java Solution 명령으로 프로그램을 수행해볼 수 있습니다.
  */
-class SWEA1204
+class SWEA1208
 {
 	public static void main(String args[]) throws Exception
 	{
@@ -43,33 +44,59 @@ class SWEA1204
 		   따라서 테스트를 수행할 때에는 아래 주석을 지우고 이 메소드를 사용하셔도 좋습니다.
 		   단, 채점을 위해 코드를 제출하실 때에는 반드시 이 메소드를 지우거나 주석 처리 하셔야 합니다.
 		 */
-		System.setIn(new FileInputStream("res/input.txt"));
+		System.setIn(new FileInputStream("Array1/res/input3.txt"));
 
 		/*
 		   표준입력 System.in 으로부터 스캐너를 만들어 데이터를 읽어옵니다.
 		 */
 		Scanner sc = new Scanner(System.in);
-		int T;
-		T=sc.nextInt();
 		/*
 		   여러 개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 		*/
 
-		for(int test_case = 1; test_case <= T; test_case++)
+		//1. 나의 풀이 ) 필요할 때 정렬을 수행하는 방법
+		for(int test_case = 1; test_case <= 10; test_case++)
 		{
-			int level = sc.nextInt();
-			int[] grade = new int[101];
-			for(int i = 0; i < 1000; i++) {
-				grade[sc.nextInt()]++;
-			}
-			int answer = 0; int max = 0;
-			for(int i = 0; i < 101; i++) {
-				if(max <= grade[i]) {
-					max = grade[i];
-					answer = i;
+			int limit = sc.nextInt();
+			int[] box = new int[100];
+			for(int i = 0; i < 100; i++)
+				box[i] = sc.nextInt();
+			Arrays.sort(box);
+			while(limit > 0) {
+				if(box[0] > box[1] || box[99] < box[98])	Arrays.parallelSort(box);
+				if(box[99]-box[0] <= 1)	break;
+				else {
+					box[0]++; box[99]--;
+					limit--;
 				}
 			}
-			System.out.println("#" + level + " " + answer);
+			Arrays.sort(box);
+			System.out.println("#" + test_case + " " + (box[99]-box[0]));
+		}
+		
+		//2. 시간복잡도 고려 ) 개수 배열 이용
+		for(int test_case = 1; test_case <= 10; test_case++)
+		{ 
+			int limit = sc.nextInt();
+			int[] boxcount = new int[101];
+			int min = Integer.MAX_VALUE; int max = Integer.MIN_VALUE;
+			for(int i = 0; i < 100; i++) {
+				int target = sc.nextInt();
+				boxcount[target]++;
+				min = Math.min(min, target);
+				max = Math.max(max, target);
+			}
+			while(limit > 0) {
+				if(max-min <= 1)	break;
+				else {
+					boxcount[max]--; boxcount[max-1]++;
+					boxcount[min]--; boxcount[min+1]++;
+					if(boxcount[max] == 0)	max--;
+					if(boxcount[min] == 0) min++;
+					limit--;
+				}
+			}
+			System.out.println("#" + test_case + " " + (max-min));
 		}
 	}
 }
