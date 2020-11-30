@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="Array1"/>
 	<classpathentry kind="src" path="Array2"/>
+	<classpathentry kind="src" path="String"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
