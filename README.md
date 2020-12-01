@@ -9,4 +9,9 @@ SWEA(SW Expert Academy) java code
 ### 2. Array2
 - SWEA1209 : Sum
 - SWEA1201 : Ladder1 (메모리 사용량 줄이기 : 매번 확인하지 않아도 되게끔)
-- SWEA1211 : 
+- SWEA1211 : Ladder2
+
+### 3. String
+- KMP : kmp 패턴 매칭 알고리즘
+- BoyerMoore : 보이어 무어 패턴 매칭 알고리즘
+- SWEA1213 : String (KMP로 해결한 경우)
