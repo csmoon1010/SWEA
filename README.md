@@ -15,3 +15,5 @@ SWEA(SW Expert Academy) java code
 - KMP : kmp 패턴 매칭 알고리즘
 - BoyerMoore : 보이어 무어 패턴 매칭 알고리즘
 - SWEA1213 : String (KMP로 해결한 경우)
+- SWEA1215 : 회문(작은 범위, 길이 지정)
+- SWEA1216 : 회문2(큰 범위, 가장 긴 길이 출력)
