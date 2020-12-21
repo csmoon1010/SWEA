@@ -17,3 +17,6 @@ SWEA(SW Expert Academy) java code
 - SWEA1213 : String (KMP로 해결한 경우)
 - SWEA1215 : 회문(작은 범위, 길이 지정)
 - SWEA1216 : 회문2(큰 범위, 가장 긴 길이 출력)
+
+### 4. Stack
+- Stackstructure : 1차원 배열로 구현한 stack의 push, pop
