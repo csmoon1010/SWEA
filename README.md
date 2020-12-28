@@ -18,5 +18,8 @@ SWEA(SW Expert Academy) java code
 - SWEA1215 : 회문(작은 범위, 길이 지정)
 - SWEA1216 : 회문2(큰 범위, 가장 긴 길이 출력)
 
-### 4. Stack
+### 4. Stack1
 - Stackstructure : 1차원 배열로 구현한 stack의 push, pop
+- SWEA1217 : 거듭 제곱(재귀호출)
+- SWEA1218 : 괄호 짝짓기
+- SWEA1219 : 길찾기(DFS)
