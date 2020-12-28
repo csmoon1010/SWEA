@@ -6,7 +6,7 @@ class SWEA1219
 {
 	public static void main(String args[]) throws Exception
 	{
-		System.setIn(new FileInputStream("Stack/res/input3.txt"));
+		System.setIn(new FileInputStream("Stack1/res/input3.txt"));
 		Scanner sc = new Scanner(System.in);
 		
 		while(sc.hasNextInt()) {
