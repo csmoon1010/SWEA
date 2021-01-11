@@ -6,5 +6,6 @@
 	<classpathentry kind="src" path="Array2"/>
 	<classpathentry kind="src" path="String"/>
 	<classpathentry kind="src" path="Stack1"/>
+	<classpathentry kind="src" path="Stack2"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
