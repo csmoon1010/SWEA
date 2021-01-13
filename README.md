@@ -25,7 +25,7 @@ SWEA(SW Expert Academy) java code
 - SWEA1219 : 길찾기(DFS)
 
 ### 5. Stack2
-[백트래킹]((https://esw-csmoon.tistory.com/entry/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9-%EA%B8%B0%EB%B2%95Backtracking?category=1125729)
+[백트래킹](https://esw-csmoon.tistory.com/entry/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9-%EA%B8%B0%EB%B2%95Backtracking?category=1125729)
 - Maze : 백트래킹으로 구현한 미로찾기(with maze.txt)
 - Powerset : 백트래킹으로 구현한 Power Set(공집합 + 모든 부분집합)
 - Permutation : 백트래킹으로 구현한 순열
