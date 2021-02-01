@@ -50,7 +50,7 @@ class Maze
 					int newx = target[0] + d[i][0];
 					int newy = target[1] + d[i][1];
 					if(newx >= 0 && newx < size && newy >= 0 && newy < size) {
-						if(mazeArray[newx][newy] == 0 && !visited[newx][newy]) { //visited 끝난 곳은 다시 가지 않음으로 백트래킹 처리...?
+						if(mazeArray[newx][newy] == 0 && !visited[newx][newy]) { //visited 끝난 곳은 다시 가지 않음으로 백트래킹 처리
 							stack.push(new int[] {newx, newy});
 							visited[newx][newy] = true;
 							flag = true;
@@ -59,7 +59,7 @@ class Maze
 					}
 				}
 				if(!flag) {
-					int[] s = stack.pop();
+					int[] s = stack.pop(); //현재 위치에서 갈 수 있는 곳이 없음 -> 되돌아가기
 				}
 			}
 		}
