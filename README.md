@@ -40,3 +40,8 @@ SWEA(SW Expert Academy) java code
 - Maze : 백트래킹으로 구현한 미로찾기(with maze.txt)
 - Powerset : 백트래킹으로 구현한 Power Set(공집합 + 모든 부분집합)
 - Permutation : 백트래킹으로 구현한 순열
+
+문제
+- SWEA1222 : 계산기1 (+)
+- SWEA1223 : 계산기2 (+, *)
+- SWEA1224 : 계산기3 (+, *, 괄호)
