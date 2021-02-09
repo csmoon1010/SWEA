@@ -45,3 +45,10 @@ SWEA(SW Expert Academy) java code
 - SWEA1222 : 계산기1 (+)
 - SWEA1223 : 계산기2 (+, *)
 - SWEA1224 : 계산기3 (+, *, 괄호)
+
+### 6. queue
+- LinearQueue : 선형 큐(배열)
+- CircularQueue : 원형 큐(배열)
+- LinkedQueue : 연결 큐(연결리스트)
+- PriorityQueue : 우선순위 큐(연결리스트)
+- JavaQueue, JavaQueue2 : java.util.LinkedList, PriorityQueue, Comparator
