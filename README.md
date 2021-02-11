@@ -47,8 +47,12 @@ SWEA(SW Expert Academy) java code
 - SWEA1224 : 계산기3 (+, *, 괄호)
 
 ### 6. queue
-- LinearQueue : 선형 큐(배열)
-- CircularQueue : 원형 큐(배열)
-- LinkedQueue : 연결 큐(연결리스트)
-- PriorityQueue : 우선순위 큐(연결리스트)
+[Queue](https://esw-csmoon.tistory.com/entry/Queue%ED%81%90-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0?category=1125729)  
+[DFS, BFS](https://esw-csmoon.tistory.com/entry/DFSDepth-first-Search-BFSBreadth-first-Search?category=1125729)
+- LinearQueue, CircularQueue, LinkedQueue, PriorityQueue : 선형 큐, 원형 큐(배열), 연결 큐, 우선순위 큐(연결리스트)
 - JavaQueue, JavaQueue2 : java.util.LinkedList, PriorityQueue, Comparator
+- BreadthFirstSearch : BFS(너비 우선 탐색)  
+  
+문제
+- SWEA1225 : 암호생성기
+- SWEA1226, SWEA1227 : 미로(BFS)
