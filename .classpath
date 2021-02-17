@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="Stack2"/>
 	<classpathentry kind="src" path="queue"/>
 	<classpathentry kind="src" path="list"/>
+	<classpathentry kind="src" path="sort"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
