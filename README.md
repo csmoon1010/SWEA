@@ -56,3 +56,10 @@ SWEA(SW Expert Academy) java code
 문제
 - SWEA1225 : 암호생성기
 - SWEA1226, SWEA1227 : 미로(BFS)
+
+### 7. list
+[List](https://esw-csmoon.tistory.com/entry/List-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)
+- SinglyLinkedList, DoublyLinkedList : 단순 연결, 이중 연결 List 구현
+  
+문제
+- SWEA1228, SWEA1229, SWEA1230 : 암호문1,2,3 (List 연산 활용)
