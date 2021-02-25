@@ -6,7 +6,7 @@ class SWEA1230
 {
 	public static void main(String args[]) throws Exception
 	{
-		System.setIn(new FileInputStream("list/res/input2.txt"));
+		System.setIn(new FileInputStream("list/res/input3.txt"));
 		Scanner sc = new Scanner(System.in);
 		for(int test_case = 1; test_case <= 10; test_case++)
 		{
@@ -40,7 +40,7 @@ class SWEA1230
 				int index = Integer.parseInt(command[0]);
 	        	int size = Integer.parseInt(command[1]);
 	        	for(int j = 0; j < size; j++) {
-	        		origins.remove(index+1);
+	        		origins.remove(index);
 	        	}
 			} else if(operation[i].equals("A")) {
 				int size = Integer.parseInt(command[0]);
