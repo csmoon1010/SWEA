@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="queue"/>
 	<classpathentry kind="src" path="list"/>
 	<classpathentry kind="src" path="sort"/>
+	<classpathentry kind="src" path="tree"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
