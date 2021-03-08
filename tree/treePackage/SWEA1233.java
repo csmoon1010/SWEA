@@ -14,16 +14,18 @@ class SWEA1233
 			for(int test_case = 1; test_case <= 10; test_case++)
 			{
 				int n = sc.nextInt();
+				sc.nextLine();
 				OperationNode[] tree = new OperationNode[n+1];
 				for(int i = 1; i <= n; i++) {
-					int index = sc.nextInt();
-					String element = sc.next();
 					int left = 0; int right = 0;
-					if(index*2 <= n) {
-						left = sc.nextInt();
+					String[] str = sc.nextLine().split(" ");
+					int index = Integer.parseInt(str[0]);
+					String element = str[1];
+					if(str.length >= 3) {
+						left = Integer.parseInt(str[2]);
 					}
-					if(index*2 + 1 <= n) {
-						right = sc.nextInt();
+					if(str.length == 4) {
+						right = Integer.parseInt(str[3]);
 					}
 					tree[index] = new OperationNode(element, left, right);
 				}
