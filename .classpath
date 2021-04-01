@@ -11,5 +11,6 @@
 	<classpathentry kind="src" path="list"/>
 	<classpathentry kind="src" path="sort"/>
 	<classpathentry kind="src" path="tree"/>
+	<classpathentry kind="src" path="graph"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
